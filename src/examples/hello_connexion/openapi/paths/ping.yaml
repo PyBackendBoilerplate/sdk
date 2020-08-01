@@ -1,0 +1,11 @@
+get:
+  x-openapi-router-controller: sdk.api.common.ping
+  operationId: ping
+  responses:
+    "200":
+      description: Ping test
+      content:
+        text/plain:
+          schema:
+            type: string
+            example: "pong"

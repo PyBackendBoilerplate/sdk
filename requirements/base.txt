@@ -1,0 +1,8 @@
+Flask
+gunicorn
+# bravado
+# bravado-core
+zope.event
+connexion[swagger-ui]
+python-dotenv
+docker-compose

@@ -1,0 +1,11 @@
+-r base.txt
+
+# pytest
+# pytest-bdd
+debugpy
+yapf
+pylint
+openapi-spec-validator
+
+# See https://github.com/jfinkhaeuser/prance for dependencies
+prance[osv,icu,cli]  # allows to split the openapi files
