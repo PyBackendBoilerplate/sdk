@@ -25,6 +25,13 @@ class ConfigBase:
     def reload_config_from_env(
         self, use_dotenv_files: bool = True, default_env: Dict[ConstantsBase.Environment.Variable, str] = None
     ) -> None:
+        """[summary]
+
+        Args:
+            use_dotenv_files (bool, optional): [description]. Defaults to True.
+            default_env (Dict[ConstantsBase.Environment.Variable, str], optional): [description]. Defaults to None.
+        """
+
         if default_env is None:
             default_env = ConstantsBase.Environment.default_env()
 

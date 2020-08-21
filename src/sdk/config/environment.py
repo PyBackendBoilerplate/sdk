@@ -85,6 +85,8 @@ class Environment:
             str: The flask app host.
         """
 
+        # The hosts needs to be treated as lowercase because Flask requires
+        # it to be in the .flaskenv and we want to keep consistency so we lower() it too
         return self.getenv(ConstantsBase.Environment.Variable.HOST.name.lower())
 
     @property
@@ -112,14 +114,24 @@ class Environment:
             Union[str, None]: The environment variable value / default value / None if N/A.
         """
 
+        # Try to get the env var
+
         if isinstance(key, ConstantsBase.Environment.Variable):
             env_var = os.getenv(key.name, None)
         else:
             env_var = os.getenv(key, None)
 
+        # If nothing was found
+
         if env_var is None:
-            if isinstance(key, ConstantsBase.Environment.Variable) and key in ConstantsBase.Environment.Variable:
+
+            # And the env var has a predefined default
+
+            if isinstance(key, ConstantsBase.Environment.Variable):
                 if key in self._default_env:
+
+                    # Return the default value and sets it back into the environment
+
                     env_var = self._default_env[key]
                     self.setenv(key, env_var)
 

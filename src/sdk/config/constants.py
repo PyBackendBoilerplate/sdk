@@ -15,10 +15,10 @@ class ConstantsBase:
     
     class Constants(ConstantsBase):
 
-    @unique
-    class MyConstantsGroup(Enum):
-        CONST_A = auto()
-        CONST_B = auto()
+        @unique
+        class MyConstantsGroup(Enum):
+            CONST_A = auto()
+            CONST_B = auto()
     """
 
     class Environment:
