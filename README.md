@@ -2,7 +2,9 @@
 
 ## Development status: WIP
 
-This package encapsulate all of the common infrastructure required to implement a [Flask](https://flask.palletsprojects.com/) based [microservice](https://github.com/PyBackendBoilerplate/micro-service) with support for [OpenAPI 3](https://swagger.io/specification/) and [Connexion](https://github.com/zalando/connexion) out-of-the-box.
+This package encapsulate all of the common infrastructure required to implement a [Flask](https://flask.palletsprojects.com/) based microservice with support for [OpenAPI 3](https://swagger.io/specification/) and [Connexion](https://github.com/zalando/connexion) out-of-the-box.
+
+The SDK is part of the [_PyBackendBoilerplate_](https://github.com/PyBackendBoilerplate) package and is used in the example [micro-service](https://github.com/PyBackendBoilerplate/micro-service) boilerplate project under that package.
 
 ## Tech Stack
 
