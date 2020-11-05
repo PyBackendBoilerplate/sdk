@@ -1,5 +1,5 @@
 {
-    "python.pythonPath": "/home/nusnus/dev/PyFlaskBackend/sdk/.venv/bin/python3",
+    "python.pythonPath": "${workspaceFolder}/.venv/bin/python3",
     "python.languageSever": "Pylance",
     "python.analysis.autoSearchPaths": true,
     "python.linting.enabled": true,
