@@ -8,4 +8,8 @@ pylint
 openapi-spec-validator
 
 # See https://github.com/jfinkhaeuser/prance for dependencies
+# Make sure to run this before this could work:
+# for Ubuntu:
+# sudo apt-get install libicu-dev
+# sudo apt-get install python3-dev
 prance[osv,icu,cli]  # allows to split the openapi files
